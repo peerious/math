@@ -1,0 +1,195 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#f4f6f9;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+select{
+padding:10px;
+font-size:18px;
+border-radius:10px;
+border:2px solid #ccc;
+width:220px;
+}
+
+.container{
+width:100%;
+max-width:900px;
+background:white;
+border-radius:20px;
+padding:30px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+h1{
+text-align:center;
+margin-bottom:25px;
+color:#2c3e50;
+}
+
+.setup-panel{
+display:flex;
+flex-direction:column;
+gap:25px;
+}
+
+.section{
+background:#f8fafc;
+padding:20px;
+border-radius:12px;
+}
+
+.section h3{
+margin-bottom:15px;
+}
+
+.section label{
+display:inline-block;
+margin-right:15px;
+font-size:18px;
+}
+
+button{
+cursor:pointer;
+border:none;
+padding:12px 24px;
+border-radius:10px;
+font-size:18px;
+transition:0.2s;
+}
+
+button:hover{
+transform:translateY(-2px);
+}
+
+#startBtn,
+#submitBtn,
+#playAgain{
+background:#3498db;
+color:white;
+}
+
+.hidden{
+display:none;
+}
+
+.top-bar{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+margin-bottom:25px;
+}
+
+.card{
+background:#eef5ff;
+border-radius:12px;
+text-align:center;
+padding:15px;
+}
+
+.card span{
+display:block;
+margin-bottom:5px;
+color:#555;
+}
+
+.question-box{
+text-align:center;
+}
+
+.question{
+font-size:48px;
+font-weight:bold;
+margin-bottom:20px;
+}
+
+#answer{
+width:250px;
+padding:12px;
+font-size:24px;
+text-align:center;
+border:2px solid #ccc;
+border-radius:10px;
+}
+
+#submitBtn{
+margin-left:10px;
+}
+
+.stats{
+margin-top:25px;
+display:flex;
+justify-content:center;
+gap:30px;
+font-size:20px;
+}
+
+.result-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+margin:20px 0;
+}
+
+.result-card{
+background:#eef5ff;
+padding:20px;
+border-radius:12px;
+text-align:center;
+}
+
+.leaderboard{
+margin-top:20px;
+}
+
+.leaderboard h3{
+margin-bottom:10px;
+}
+
+.leaderboard ol{
+padding-left:25px;
+}
+
+.leaderboard li{
+margin:8px 0;
+}
+
+@media(max-width:700px){
+.top-bar{
+    grid-template-columns:1fr;
+}
+
+.result-grid{
+    grid-template-columns:1fr;
+}
+
+.question{
+    font-size:36px;
+}
+
+#answer{
+    width:100%;
+    margin-bottom:10px;
+}
+
+#submitBtn{
+    width:100%;
+    margin-left:0;
+}
+
+.stats{
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+}
+}
