@@ -52,42 +52,46 @@
 
     <div id="gameArea" class="hidden">
 
-        <div class="top-bar">
+<div class="game-layout">
 
-            <div class="card">
-                <span>⏱ Time</span>
-                <h2 id="time">60</h2>
-            </div>
+    <div class="question-box">
 
-            <div class="card">
-                <span>🏆 Score</span>
-                <h2 id="score">0</h2>
-            </div>
-
-            <div class="card">
-                <span>🎯 Accuracy</span>
-                <h2 id="accuracy">100%</h2>
-            </div>
-
+        <div id="question" class="question">
+            5 + 5 = ?
         </div>
 
-        <div class="question-box">
+        <input
+            type="number"
+            id="answer"
+            placeholder="Your answer"
+            autocomplete="off">
 
-            <div id="question" class="question">
-                5 + 5 = ?
-            </div>
+        <button id="submitBtn">
+            Submit
+        </button>
 
-            <input
-                type="number"
-                id="answer"
-                placeholder="Your answer"
-                autocomplete="off">
+    </div>
 
-            <button id="submitBtn">
-                Submit
-            </button>
+    <div class="side-panel">
 
+        <div class="card">
+            <span>⏱ Time</span>
+            <h2 id="time">60</h2>
         </div>
+
+        <div class="card">
+            <span>🏆 Score</span>
+            <h2 id="score">0</h2>
+        </div>
+
+        <div class="card">
+            <span>🎯 Accuracy</span>
+            <h2 id="accuracy">100%</h2>
+        </div>
+
+    </div>
+
+</div>
 
         <div class="stats">
 
